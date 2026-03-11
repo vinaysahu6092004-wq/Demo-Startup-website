@@ -1,11 +1,11 @@
 import Hero from "../Components/Hero"
 import About from "../Components/About"
-import HowItWorks from "../Components/HowitWorks"
+import Stats from "../Components/stats.jsx"
 import WhoCanApply from "../Components/WhoCanApply"
 import FeaturedStartups from "../Components/FeaturedStartups"
 import CTA from "../Components/CTA"
-import Investors from "../Components/Investor"
-import Stats from "../Components/stats"
+import Investors from "../Components/Investor.jsx"
+import HowItWorks from "../Components/HowitWorks"
 import BackToTop from "../Components/BackToTop"
 function Home() {
   return (

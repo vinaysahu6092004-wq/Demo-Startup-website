@@ -74,4 +74,4 @@ function HowItWorks() {
   )
 }
 
-export default HowItWorks
+export default HowItWorks;
