@@ -1,0 +1,174 @@
+.about{
+
+padding:130px 20px;
+
+background:linear-gradient(
+180deg,
+#ffffff,
+#f8fafc
+);
+
+}
+
+/* container */
+
+.about-container{
+
+max-width:1100px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+/* title */
+
+.about-title{
+
+font-size:40px;
+
+font-weight:700;
+
+letter-spacing:-0.5px;
+
+}
+
+.about-title span{
+
+background:linear-gradient(
+90deg,
+#4f46e5,
+#06b6d4
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* text */
+
+.about-text{
+
+margin-top:22px;
+
+font-size:18px;
+
+color:#555;
+
+line-height:1.7;
+
+max-width:700px;
+
+margin-left:auto;
+margin-right:auto;
+
+}
+
+/* cards grid */
+
+.about-cards{
+
+margin-top:70px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:30px;
+
+}
+
+/* card */
+
+.about-card{
+
+padding:36px;
+
+background:rgba(255,255,255,0.7);
+
+border-radius:18px;
+
+border:1px solid rgba(255,255,255,0.4);
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+transition:all 0.35s ease;
+
+}
+
+/* hover 3D */
+
+.about-card:hover{
+
+transform:translateY(-10px) scale(1.04);
+
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+
+}
+
+/* icon */
+
+.card-icon{
+
+font-size:34px;
+
+margin-bottom:12px;
+
+}
+
+/* heading */
+
+.about-card h3{
+
+font-size:20px;
+
+margin-bottom:10px;
+
+}
+
+/* paragraph */
+
+.about-card p{
+
+font-size:15px;
+
+color:#666;
+
+line-height:1.6;
+
+}
+
+/* responsive */
+
+@media (max-width:768px){
+
+.about{
+
+padding:100px 20px;
+
+}
+
+.about-title{
+
+font-size:32px;
+
+}
+
+.about-text{
+
+font-size:16px;
+
+}
+
+.about-cards{
+
+gap:20px;
+
+}
+
+}

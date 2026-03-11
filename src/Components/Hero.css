@@ -1,0 +1,240 @@
+.hero{
+
+position:relative;
+
+padding-top:170px;
+padding-bottom:150px;
+
+text-align:center;
+
+overflow:hidden;
+
+background:linear-gradient(
+180deg,
+#ffffff,
+#f8fafc,
+#eef2ff
+);
+
+}
+
+/* floating background blobs */
+
+.hero-bg::before,
+.hero-bg::after{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+height:420px;
+
+border-radius:50%;
+
+filter:blur(120px);
+
+z-index:0;
+
+}
+
+.hero-bg::before{
+
+background:#6366f1;
+
+top:-120px;
+left:-120px;
+
+opacity:0.35;
+
+}
+
+.hero-bg::after{
+
+background:#06b6d4;
+
+bottom:-140px;
+right:-120px;
+
+opacity:0.3;
+
+}
+
+/* container */
+
+.hero-container{
+
+max-width:900px;
+
+margin:auto;
+
+position:relative;
+
+z-index:1;
+
+}
+
+/* title */
+
+.hero-title{
+
+font-size:54px;
+
+font-weight:700;
+
+line-height:1.15;
+
+letter-spacing:-1px;
+
+}
+
+/* gradient highlight */
+
+.hero-title span{
+
+background:linear-gradient(
+90deg,
+#6366f1,
+#06b6d4
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+/* subtitle */
+
+.hero-subtext{
+
+margin-top:24px;
+
+font-size:18px;
+
+color:#555;
+
+line-height:1.7;
+
+max-width:680px;
+
+margin-left:auto;
+margin-right:auto;
+
+}
+
+/* buttons */
+
+.hero-buttons{
+
+margin-top:38px;
+
+display:flex;
+
+justify-content:center;
+
+gap:16px;
+
+flex-wrap:wrap;
+
+}
+
+/* primary button */
+
+.primary-btn{
+
+padding:14px 28px;
+
+border-radius:14px;
+
+border:none;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+color:white;
+
+background:linear-gradient(
+135deg,
+#6366f1,
+#06b6d4
+);
+
+box-shadow:0 12px 30px rgba(0,0,0,0.2);
+
+transition:all 0.3s ease;
+
+}
+
+/* hover */
+
+.primary-btn:hover{
+
+transform:translateY(-4px) scale(1.05);
+
+box-shadow:0 20px 45px rgba(0,0,0,0.25);
+
+}
+
+/* secondary button */
+
+.secondary-btn{
+
+padding:14px 28px;
+
+border-radius:14px;
+
+border:1px solid #e5e7eb;
+
+background:white;
+
+font-size:16px;
+
+font-weight:500;
+
+cursor:pointer;
+
+transition:all 0.3s ease;
+
+}
+
+/* hover */
+
+.secondary-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+background:#f9fafb;
+
+}
+
+/* responsive */
+
+@media (max-width:768px){
+
+.hero{
+
+padding-top:140px;
+padding-bottom:120px;
+
+}
+
+.hero-title{
+
+font-size:38px;
+
+}
+
+.hero-subtext{
+
+font-size:16px;
+
+padding:0 10px;
+
+}
+
+}
