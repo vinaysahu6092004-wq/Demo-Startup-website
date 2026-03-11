@@ -1,6 +1,6 @@
 import Hero from "../Components/Hero"
 import About from "../Components/About"
-import Stats from "../Components/stats.jsx"
+import Stats from "../Components/Statics.jsx"
 import WhoCanApply from "../Components/WhoCanApply"
 import FeaturedStartups from "../Components/FeaturedStartups"
 import CTA from "../Components/CTA"
